@@ -20,7 +20,7 @@
 let page = document.querySelector('.cards-container')
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
-        //   Object.values(response.articles)
+        console.log(Object.values(response.data.articles))
 
         for (var i = 0; i < response.data.articles.javascript.length; i++) {
             let name = (Object.values(response.data.articles.javascript[i]))
@@ -63,7 +63,8 @@ function creation(arr) {
     Cont.classList.add('img-container')
     parents.appendChild(parent)
     parents.appendChild(writ)
-    writ.appendChild(pic)
+    writ.appendChild(Cont)
+    Cont.appendChild(pic)
     writ.appendChild(name)
-    return parent;
+    return parents;
 }

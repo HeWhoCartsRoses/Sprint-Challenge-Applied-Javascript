@@ -17,6 +17,9 @@ function Header() {
     parent.classList.add('header')
     date.classList.add('date')
     temp.classList.add('temp')
+    date.textContent = `MARCH 28, 2019`
+    title.textContent = `Lambda Times`
+    temp.textContent = `98`
     parent.appendChild(date)
     parent.appendChild(title)
     parent.appendChild(temp)
