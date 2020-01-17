@@ -21,5 +21,6 @@ function Header() {
     parent.appendChild(title)
     parent.appendChild(temp)
     return parent;
-
 }
+let dumb = document.querySelector('.header-container')
+dumb.appendChild(Header());
